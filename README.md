@@ -1,6 +1,6 @@
 # Grabador de Pantalla Simple
 
-Este es un grabador de pantalla básico desarrollado con HTML, CSS y JavaScript. El proyecto está inspirado por el streamer Midudev.
+Este es un grabador de pantalla básico desarrollado con HTML, CSS y JavaScript. El proyecto está inspirado por el streamer MiduDev.
 
 ## Características
 
