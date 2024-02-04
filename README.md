@@ -14,7 +14,7 @@ Este proyecto toma inspiración de [Midudev](https://twitch.tv/midudev), un dest
 
 ## Uso
 
-1. Clona el repositorio: `git clone https://github.com/alexcuadroo/rec.git
+1. Clona el repositorio: `git clone https://github.com/alexcuadroo/rec.git`.
 2. Abre `index.html` en tu navegador.
 
 ## Contribuciones
