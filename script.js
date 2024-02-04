@@ -1,9 +1,8 @@
-const $startButton = document.querySelector('#start')
-const $stopButton = document.querySelector('#stop')
+const startButton = document.querySelector('#start')
+const stopButton = document.querySelector('#stop')
+let mediaRecorder = null
 
-let mediarecorder = null
-
-$startButton.addEventListener('click', async () => {
+startButton.addEventListener('click', async () => {
   const width = prompt("Ingrese el ancho de la pantalla", "1920")
   const height = prompt("Ingrese la altura de la pantalla", "1080")
 
@@ -15,19 +14,19 @@ $startButton.addEventListener('click', async () => {
     },
     audio: true
   })
-  mediarecorder = new MediaRecorder(media, {
+  mediaRecorder = new MediaRecorder(media, {
     mimeType: 'video/webm;codecs=vp8,opus'
   })
-  mediarecorder.start()
+  mediaRecorder.start()
 
-  $stopButton.disabled = false
+  stopButton.disabled = false
 
   const [video] = media.getVideoTracks()
   video.addEventListener("ended", () => {
-    mediarecorder.stop()
+    mediaRecorder.stop()
   })
 
-  mediarecorder.addEventListener("dataavailable", (e) => {
+  mediaRecorder.addEventListener("dataavailable", (e) => {
     const link = document.createElement("a")
     link.href = URL.createObjectURL(e.data)
     link.download = "captura.webm"
@@ -35,9 +34,9 @@ $startButton.addEventListener('click', async () => {
   })
 })
 
-$stopButton.addEventListener('click', () => {
-  if (mediarecorder) {
-    mediarecorder.stop()
-    $stopButton.disabled = true
+stopButton.addEventListener('click', () => {
+  if (mediaRecorder) {
+    mediaRecorder.stop()
+    stopButton.disabled = true
   }
 })
