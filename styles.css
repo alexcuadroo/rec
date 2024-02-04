@@ -1,0 +1,38 @@
+body {
+	height: 100%;
+	background: #121216;
+	display: grid;
+  color: white;
+  margin: 80px 100px;;
+}
+h2 {
+  font-size: 35px;
+}
+button {
+	font-size: 24px;
+    float: right;
+    background-color: rgba(40, 50, 247, 0.441);
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    border: none;
+}
+#start:hover {
+    background-color: green;
+    cursor: pointer;
+}
+#stop:hover {
+  background-color: rgb(137, 21, 21);
+  cursor: pointer;
+}
+ 
+  #banner {
+    height: 50px;
+    color: white;
+    font-family: Orbitron, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between; /* Coloca el contenido en ambos extremos del banner */
+  }
