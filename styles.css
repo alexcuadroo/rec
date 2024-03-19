@@ -4,7 +4,6 @@ body {
 	display: grid;
   color: white;
   margin: 80px 100px;
-	font-family: system-ui,
 }
 h2 {
   font-size: 35px;
@@ -46,6 +45,7 @@ button {
   }
 footer {
         text-align: center;
+	font-family: system-ui;
         padding: 3px;
 	padding-top: 30px;
         color: white;
