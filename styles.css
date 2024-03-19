@@ -43,3 +43,9 @@ button {
     align-items: center;    
     justify-content: space-between; /* Coloca el contenido en ambos extremos del banner */
   }
+footer {
+        text-align: center;
+        padding: 3px;
+        background-color: DarkSalmon;
+        color: white;
+}
