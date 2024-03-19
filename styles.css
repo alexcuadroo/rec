@@ -3,7 +3,8 @@ body {
 	background: #121216;
 	display: grid;
   color: white;
-  margin: 80px 100px;;
+  margin: 80px 100px;
+	font-family: system-ui,
 }
 h2 {
   font-size: 35px;
@@ -46,6 +47,6 @@ button {
 footer {
         text-align: center;
         padding: 3px;
-        background-color: DarkSalmon;
+	padding-top: 30px;
         color: white;
 }
